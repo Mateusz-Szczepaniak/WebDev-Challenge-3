@@ -13,12 +13,17 @@ html{
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    flex-wrap: wrap;
     height: 11.5rem;
     background-color: #fff;
     padding: 0 15%;
 }
 
 .header__logo{
+
+}
+
+.logo{
     display: flex;
     align-items: center;
 }
@@ -43,9 +48,17 @@ html{
     padding: 0 0 0 .5rem;
 }
 
-.title__link{
+.logo__link{
     color: #555555;
     text-decoration: none;
+}
+
+.header__nav{
+
+}
+
+.nav{
+
 }
 
 .nav__wrapper{
@@ -55,17 +68,17 @@ html{
     font-weight: 700;
 }
 
-.wrapper__item{
+.nav__item{
     list-style: none;
     padding: 0 0 0 3.5rem;
 }
 
-.item__link{
+.nav__link{
     text-decoration: none;
     text-transform: uppercase;
     color: #777777;
 }
 
-.item__link:hover{
+.nav__link:hover{
     color: #222;
 }
