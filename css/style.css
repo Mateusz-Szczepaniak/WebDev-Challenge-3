@@ -14,9 +14,9 @@ html{
     justify-content: space-between; 
     align-items: center;
     flex-wrap: wrap;
-    height: 11.5rem;
+    height: 5.5rem;
     background-color: #fff;
-    padding: 0 15%;
+    padding: 0 5%;
 }
 
 .header__logo{
@@ -54,7 +54,7 @@ html{
 }
 
 .header__nav{
-
+    display: none;
 }
 
 .nav{
@@ -82,3 +82,197 @@ html{
 .nav__link:hover{
     color: #222;
 }
+
+.mobile{
+    display: unset;
+    font-size: 3rem;
+    color: #555;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 500px){
+    .header{
+        height: 6.5rem;
+        padding: 0 8%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .header{
+        height: 8.5rem;
+        padding: 0 8%;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .header__nav{
+        display: unset;
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+.about{
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/laptop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 53rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__wrapper{
+
+}
+
+.about__title{
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about__text{
+    color: #ccc;
+    font-family: "Roboto Slab";
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0 6rem 0;
+}
+
+.about__btn{
+    margin: 0 auto;
+    display: block;
+}
+
+.btn{
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+color: #ffffff;
+font-family: 'Montserrat';
+font-size: 1.2rem;
+font-weight: 700;
+text-transform: uppercase;
+background-color: #7cc576;
+border: none;
+padding: 1.7rem 2.5rem;
+border-radius: 4rem;
+cursor: pointer;
+outline: none;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #222;
+}
+
+@media screen and (min-width: 500px) and (orientation: portrait){
+    .about__title{
+        font-size: 4rem;
+    }
+    .about__text{
+        font-size: 1.8rem;
+    }
+    .btn{
+        font-size: 1.4rem;
+        padding: 1.9rem 2.7rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait){
+    .about__title{
+        font-size: 5rem;
+    }
+    .about__text{
+        font-size: 1.9rem;
+    }
+    .btn{
+        font-size: 1.5rem;
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .about__title{
+        font-size: 6rem;
+    }
+    .about__text{
+        font-size: 2rem;
+        padding: 3rem 0 6rem 0;
+    }
+    .btn{
+        font-size: 1.6rem;
+        padding: 1.9rem 2.7rem;
+    }
+}
+
+@media screen and (min-width: 480px) and (orientation: landscape){
+    .about{
+        height: 30rem;
+    }
+    .about__title{
+        font-size: 3rem;
+    }
+    .about__text{
+        font-size: 1.6rem;
+        padding: 3rem 0 6rem 0;
+        padding: 1rem 3rem 3rem 3rem;
+    }
+    .btn{
+        font-size: 1.4rem;
+        padding: 1.7rem 2.5rem;
+    }
+}
+
+@media screen and (min-width: 640px) and (orientation: landscape){
+    .about{
+        height: 35rem;
+    }
+    .about__title{
+        font-size: 4rem;
+    }
+    .about__text{
+        font-size: 1.7rem;
+        padding: 2rem 3rem 4rem 3rem;
+    }
+    .btn{
+        font-size: 1.5rem;
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (min-width: 800px) and (orientation: landscape){
+    .about{
+        height: 45rem;
+    }
+    .about__title{
+        font-size: 5rem;
+    }
+    .about__text{
+        font-size: 1.8rem;
+
+    }
+    .btn{
+        font-size: 1.6rem;
+        padding: 1.9rem 2.7rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .about{
+        height: 50rem;
+    }
+    .about__text{
+        padding: 3rem 3rem 5rem 3rem;
+}
+
