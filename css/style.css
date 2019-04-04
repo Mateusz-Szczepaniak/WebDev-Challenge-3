@@ -69,6 +69,7 @@ html{
     text-decoration: none;
     text-transform: uppercase;
     color: #777777;
+    transition: .3s;
 }
 
 .nav__link:hover{
@@ -158,6 +159,7 @@ html{
     border-radius: 4rem;
     cursor: pointer;
     outline: none;
+    transition: .3s;
 }
 
 .btn:hover{
@@ -307,6 +309,11 @@ html{
 
 .service{
     padding: 1.5rem;
+    transition: .3s;
+}
+
+.service:hover{   
+    transform: scale(1.1) 
 }
 
 .service__img{
