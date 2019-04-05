@@ -507,6 +507,7 @@ html{
 @media screen and (min-width: 500px) and (orientation: landscape){
     .info__text{
         font-size: 1.8rem;
+        width: 80%;
     }
     .info__item-box{
         width: 26rem;
@@ -516,18 +517,12 @@ html{
     }
 }
 
-@media screen and (min-width: 500px) and (orientation: landscape){
-    .info__text{
-        width: 80%;
-    }
-}
-
 @media screen and (min-width: 1024px){
     .info{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        position: absolute;
+        /* position: absolute; */
         width: 100%;
     }
     .info__gear{
@@ -582,5 +577,263 @@ html{
 @media screen and (min-width: 1600px){
     .info__text{
         width: 50%;
+    }
+}
+
+.project{
+    padding: 4rem 0 3rem 0;
+}
+
+.project__title{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #777;
+    padding: 1rem 0 0;
+}
+
+.third-title--project{
+    text-align: left;
+    padding: 0;
+    text-transform: none;
+}
+
+.third-title--project-top{
+    padding: 4rem 0 1rem;
+}
+
+.project__text{
+    font-size: 1.3rem;
+    color: #777;
+    padding: .5rem 0;
+}
+
+.project__text--project-top{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 3rem 0;
+}
+
+.project__text--project-bottom{
+    text-align: center;
+    padding: 2rem 0 1rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.project__box{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    transition: .3s;
+}
+
+.project__box:hover{
+    transform: translateX(1rem);
+}
+
+.project__img{
+    border: 3px solid #000;
+    padding: 1.2rem;
+    border-radius: 50px;
+    min-width: 7rem;
+    max-width: 7rem;
+    min-height: 7rem;
+    max-height: 7rem;
+    text-align: center;
+    margin: 1rem 1.5rem 1rem 0;
+
+}
+
+.project__link-box{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0;
+}
+
+.project__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #7cc576;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.4rem;
+    transition: .3s;
+    
+}
+
+.project__link:hover{
+    color: #222;
+}
+
+.project__tablet-img{
+    display: none;
+}
+
+@media screen and (min-width: 500px){
+    .project__box{
+        padding: 0 4rem;
+    }
+    .project__title{
+        font-size: 2rem;
+    }
+    .third-title--project-top{
+        font-size: 2rem;
+    }
+    .project__text{
+        font-size: 1.6rem;
+    }
+    .project__link{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait){
+    .project{
+        position: relative;
+        overflow: hidden;
+    }
+    .third-title--project-top{
+        text-align: left;
+        padding: 4rem 0 1rem 4rem;
+    }
+    .project__text--project-top{
+        text-align: left;
+        padding: 0 0 3rem 4rem;
+        width: 60%;
+        margin: 0;
+    }
+    .project__box{
+        width: 60%;
+    }
+    .project__text--project-bottom{
+        text-align: left;
+        padding: 2rem 0 1rem 4rem;
+        width: 60%;
+        margin: 0;
+    }
+    .project__link-box{
+        justify-content: flex-start;
+    }
+    .project__link{
+        text-align: left;
+        padding: 2rem 0 0 4rem;
+    }
+    .project__tablet-img{
+        position: absolute;
+        display: unset;
+        width: 80%;
+        top: 40%;
+        right: -30%;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 900px) and (orientation: portrait){
+    .project__tablet-img{
+        top: 30%;
+    }
+}
+
+@media screen and (min-width: 720px) and (orientation: landscape){
+    .project{
+        position: relative;
+        overflow: hidden;
+    }
+    .third-title--project-top{
+        text-align: left;
+        padding: 4rem 0 1rem 4rem;
+    }
+    .project__text--project-top{
+        text-align: left;
+        padding: 0 0 3rem 4rem;
+        width: 60%;
+        margin: 0;
+    }
+    .project__box{
+        width: 60%;
+    }
+    .project__text--project-bottom{
+        text-align: left;
+        padding: 2rem 0 1rem 4rem;
+        width: 60%;
+        margin: 0;
+    }
+    .project__link-box{
+        justify-content: flex-start;
+    }
+    .project__link{
+        text-align: left;
+        padding: 2rem 0 0 4rem;
+    }
+    .project__tablet-img{
+        position: absolute;
+        display: unset;
+        width: 80%;
+        top: 40%;
+        right: -32%;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 900px) and (orientation: landscape){
+    .project__tablet-img{
+        top: 40%;
+        right: -20%;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .project{
+        padding: 6rem 4rem;
+    }
+    .project__tablet-img{
+        top: 37%;
+        right: -25%;
+        width: 70%;
+    }
+    .third-title--project-top{
+        padding: 8rem 0 1rem 4rem;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .third-title--project-top{
+        padding: 8rem 0 1rem 20rem;
+    }
+    .project__text--project-top{
+        padding: 0 0 3rem 20rem;
+    }
+    .project__box{
+        padding: 0 2rem 0 20rem;
+    }
+    .project__text--project-bottom{
+        padding: 2rem 0 1rem 20rem;
+    }
+    .project__link{
+        padding: 2rem 0 0 20rem;
+    }
+    .project__tablet-img{
+        position: absolute;
+        display: unset;
+        width: 70%;
+        top: 30%;
+        right: -26%;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .project__tablet-img{
+        top: 22%;
+    }
+}
+
+@media screen and (min-width: 1900px){
+    .project__tablet-img{
+        width: 60%;
+        top: 15%;
+        right: -20%;
     }
 }
