@@ -141,7 +141,7 @@ html{
     padding: 3rem 0 6rem 0;
 }
 
-.about__btn{
+.btn--about{
     margin: 0 auto;
     display: block;
 }
@@ -414,5 +414,170 @@ html{
         padding: 1.5rem;
         min-width: 25%;
         max-width: 25%;
+    }
+}
+
+.info{
+    background-color: #e9e9e9;
+    width: 100%;
+}
+
+.info__gear{
+    display: none;
+}
+
+.info__wrapper{
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/cliff.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 5rem 2rem;
+}
+
+.secondary-title--info{
+    color: #fff;
+    text-align: center;
+}
+
+.info__text{
+    color: #ccc;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.info__character{
+    color: #7CC576;
+}
+
+.info__item-box{
+    width: 24.2rem;
+    display: block;
+    margin: 2rem auto;
+}
+
+.info__item{
+    color: #ccc;
+    font-size: 1.3rem;
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.info__item::before{
+    content: "\2713";
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: .6rem 0 0 0;
+    margin: 0 1rem 0 0;
+}
+
+.btn--info{
+    display: block;
+    margin: 4rem auto 0 auto;
+}
+
+@media screen and (min-width: 500px) and (orientation: portrait){
+    .info__text{
+        font-size: 1.8rem;
+    }
+    .info__item-box{
+        width: 26rem;
+    }
+    .info__item{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait){
+    .info__text{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 500px) and (orientation: landscape){
+    .info__text{
+        font-size: 1.8rem;
+    }
+    .info__item-box{
+        width: 26rem;
+    }
+    .info__item{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 500px) and (orientation: landscape){
+    .info__text{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .info{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+    }
+    .info__gear{
+        position: absolute;
+        display: unset;
+        top: center;
+        left: 0;
+        width: 50%;
+        z-index: 0;
+    }
+    .info__gear-img{
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        animation: rotation 20s infinite linear;
+    }
+    @keyframes rotation {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+        }
+    }
+    .info__wrapper{
+        width: 75%;
+        padding: 7rem 7%;
+        z-index: 1;
+    }
+    .secondary-title--info{
+        text-align: left;
+    }
+    .info__text{
+        font-size: 1.4rem;
+        text-align: left;
+        margin: 0;
+        width: 80%;
+    }
+    .info__item-box{
+        width: 100%;
+    }
+    .btn--info{
+        margin: 4rem 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    .info__text{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .info__text{
+        width: 50%;
     }
 }
