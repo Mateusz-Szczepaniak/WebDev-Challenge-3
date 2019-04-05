@@ -399,7 +399,8 @@ html{
     }
     .services__main{
         justify-content: space-evenly;
-        padding: 3rem auto 0 auto;
+        padding: 3rem 0 0;
+        margin: 0 auto;
     }
     .secondary-title{
         font-size: 4rem;
