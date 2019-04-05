@@ -399,7 +399,7 @@ html{
     }
     .services__main{
         justify-content: space-evenly;
-        padding: 3rem 0 0 0;
+        padding: 3rem auto 0 auto;
     }
     .secondary-title{
         font-size: 4rem;
@@ -477,6 +477,10 @@ html{
     margin: 0 1rem 0 0;
 }
 
+.info__item:hover::before{
+    color: #7cc576;
+    border: 1px solid #7cc576;
+}
 .btn--info{
     display: block;
     margin: 4rem auto 0 auto;
@@ -537,7 +541,6 @@ html{
     .info__gear-img{
         display: block;
         margin: 0 auto;
-        height: auto;
         animation: rotation 20s infinite linear;
     }
     @keyframes rotation {
