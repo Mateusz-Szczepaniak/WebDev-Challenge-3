@@ -642,7 +642,6 @@ html{
     max-height: 7rem;
     text-align: center;
     margin: 1rem 1.5rem 1rem 0;
-
 }
 
 .project__link-box{
@@ -835,5 +834,242 @@ html{
         width: 60%;
         top: 15%;
         right: -20%;
+    }
+}
+
+.values{
+    position: relative;
+    padding: 4rem 0 3rem 0;
+    background-color: #f9f9f9;
+}
+
+.values__title{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #777;
+    padding: 1rem 0 2rem;
+}
+
+.values__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.values__box-item{
+    width: 90%;
+    padding: 2rem 0;
+}
+
+.values__img{
+    border: 3px solid #777;
+    border-radius: 50px;
+    min-width: 9rem;
+    max-width: 9rem;
+    min-height: 9rem;
+    max-height: 9rem;
+    text-align: center;
+    padding: 1.8rem .2rem 0rem 0;
+    margin: 0 auto;
+}
+
+.values__box-text{
+    font-size: 1.3rem;
+    color: #777;
+    text-align: center;
+}
+
+@media screen and (min-width: 500px){
+    .values__title{
+        font-size: 2rem;
+    }
+    .values__box-text{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait){
+    .values__box-item{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 720px) and (orientation: landscape){
+    .values__box-item{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .values{
+        padding: 6rem 0 3rem 0;
+    }
+    .values__box{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .values__box-item{
+        max-width: 30%;
+        min-width: 30%;
+        height: 25rem;
+    }
+    .values__line-first{
+        position: absolute;
+        top: 50%;
+        left: 28%;
+        background-color: #777;
+        width: 12%;
+        height: 0.3rem;
+    }
+    .values__line-second{
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        background-color: #777;
+        width: 12%;
+        height: 0.3rem;
+    }
+}
+
+.clients{
+    padding: 4rem 0 3rem 0;
+}
+
+.clients__title{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #777;
+    padding: 1rem 0 2rem;
+}
+
+.clients__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.clients__box--order{
+    flex-direction: column-reverse;
+}
+
+.clients__img{
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+}
+
+.clients__bubble{
+    position: relative;
+    background-color: #f9f9f9;
+    width: 90%;
+    margin: 4rem 0 0;
+}
+
+.clients__text{
+    font-size: 1.4rem;
+    color: #777;
+    padding: 2rem;
+    text-align: center;
+}
+
+.clients__arrow-one::before, .clients__arrow-two::before{
+    content: '';
+    position: absolute;
+    top: -4.4rem;
+    left: 50%;
+    border: 22px solid;
+    border-color: transparent transparent #f9f9f9 transparent;
+    margin-left: -22px;
+}
+
+.clients__author{
+    font-size: 1.4rem;
+    color: #7cc576;
+    padding: 0 0 2rem 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 500px){
+    .clients__title{
+        font-size: 2rem;
+    }
+    .clients__text{
+        font-size: 1.6rem;
+    }
+    .clients__author{
+        font-size: 1.6rem;
+    }
+    .clients__img{
+        width: 22.5rem;
+        height: 22.5rem;
+    }
+}
+
+@media screen and (min-width: 720px){
+    .clients__box{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .clients__arrow-one::before{
+        top: 50%;
+        left: -4.4rem;
+        border-color: transparent #f9f9f9 transparent transparent;
+        margin-top: -2.2rem;
+        margin-left: 0;
+    }
+    .clients__arrow-two::before{
+        top: 50%;
+        left: unset;
+        right: -4.4rem;
+        border-color: transparent transparent transparent #f9f9f9;
+        margin-top: -2.2rem;
+    }
+    .clients__bubble{
+        width: 50%;
+        margin: 4rem 0 0;
+    }
+    .clients__img{
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .clients{
+        padding: 6rem 0 3rem 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .clients{
+        width: 70%;
+}
+    .clients__img{
+        width: 27.5rem;
+        height: 27.5rem;
+    }
+}
+
+@media screen and (min-width: 1536px){
+    .clients{
+        width: 60%;
+    }
+    .clients__box{
+        justify-content: center;
+    }
+    .clients__bubble{
+        width: 50%;
+        margin: 4rem 6rem 0 6rem;
+    }
+    .clients__img{
+        width: 30rem;
+        height: 30rem;
     }
 }
