@@ -19,7 +19,17 @@
             <p class="logo__title"><a class="logo__link" href="#">Treehouse</a></p>
         </div>
             <nav class="mobile">
-                <p><span class="fas fa-bars"></span></p>
+                <label for="mobile__label">
+                    <span class="fas fa-bars"></span>
+                </label>
+                <input type="checkbox" id="mobile__label"/>
+                <ul class="mobile__wrapper">
+                    <li class="mobile__item"><a class="mobile__link" href="#">Home</a></li>
+                    <li class="mobile__item"><a class="mobile__link" href="#">About</a></li>
+                    <li class="mobile__item"><a class="mobile__link" href="#">Blog</a></li>
+                    <li class="mobile__item"><a class="mobile__link" href="#">Portfolio</a></li>
+                    <li class="mobile__item"><a class="mobile__link" href="#">Contact</a></li>
+                </ul>
             </nav>
         <nav class="nav">
             <ul class="nav__wrapper">
@@ -160,5 +170,121 @@
                 <img src="img/client2.jpg" alt="Client Kim Thompson" class="clients__img">
             </div>
     </section>
+    <section class="contact">
+        <h2 class="secondary-title secondary-title--contact">ready to talk about your next project?</h2>
+        <button class="contact__btn">Contact us</button>
+    </section>
+    <section class="trust-us">
+        <div class="trust-us__box">
+            <img src="img/envato-logo.png" alt="Envato Logo" class="trust-us__logo">
+            <img src="img/wordpress-logo.png" alt="Wordpress Logo" class="trust-us__logo">
+        </div>
+        <div class="trust-us__box">
+            <img src="img/aetuts-logo.png" alt="Adobe After Effects Logo" class="trust-us__logo">
+            <img src="img/microlancer-logo.png" alt="Microlancer Logo" class="trust-us__logo">
+        </div>    
+    </section>
+    <section class="news">
+        <div class="news__box">
+            <h3 class="third-title third-title--news">Contact Us</h3>
+            <div class="news__item-contact news__item-contact--position">
+                <div class="news__icon">
+                    <img src="img/icon-location.png" alt="Email icon" >
+                </div>
+                <div>
+                    <p class="news__text">55 Main St.</p>
+                    <p class="news__text">Toronto, ON</p>
+                    <p class="news__text">M1H 3A5</p>                    
+                </div>      
+            </div>
+            <div class="news__item-contact">
+                <div class="news__icon">
+                    <img src="img/icon-phone.png" alt="Email icon" >
+                </div>
+                <p class="news__text"><a class="news__contact" href="tel:+48555525555">(+48)555-525-555</a></p>      
+            </div>
+            <div class="news__item-contact">
+                <div class="news__icon">
+                    <img src="img/icon-email.png" alt="Email icon" >
+                </div>
+                <p class="news__text"><a class="news__contact" href="mailto:hello@treehouse.com">hello@treehouse.com</a></p>  
+            </div>
+        </div>
+        <div class="news__line"></div>
+        <div class="news__box">
+                <h3 class="third-title third-title--news">Latest Posts</h3>
+                <div class="news__item-posts">
+                    <div class="news__icon">
+                        <img src="img/icon-news.png" alt="News icon" >
+                    </div>
+                        <a href="#" class="news__text news__text--link">Made With Love In Toronto</a>
+                </div>
+                <div class="news__item-posts">
+                    <div class="news__icon">
+                        <img src="img/icon-photo.png" alt="Photo icon" >
+                    </div>
+                    <a href="#" class="news__text news__text--link">Startup News & Emerging Tech</a>      
+                </div>
+                <div class="news__item-posts">
+                    <div class="news__icon">
+                        <img src="img/icon-news.png" alt="News icon" >
+                    </div>
+                    <a href="#" class="news__text news__text--link">Bitcoin Will Soon Rule The World</a>  
+                </div>
+                <div class="news__item-posts">
+                    <div class="news__icon">
+                        <img src="img/icon-news.png" alt="News icon" >
+                    </div>
+                    <a href="#" class="news__text news__text--link">Wearable Technology On The Rise</a>  
+                </div>
+                <div class="news__item-posts">
+                    <div class="news__icon">
+                        <img src="img/icon-media.png" alt="Media icon" >
+                    </div>
+                    <a href="#" class="news__text news__text--link">Learn Web Design In 30 Days!</a>  
+                </div>
+        </div>
+        <div class="news__line"></div>
+        <div class="news__box">
+            <h3 class="third-title third-title--news">Latest Tweets</h3>
+            <div class="news__item-twitter">
+                <div class="news__icon">
+                    <img src="img/icon-twitter.png" alt="Twitter icon" >
+                </div>
+                <div>
+                    <a href="#" class="news__text newst__text--twitter">Confucius: Life is really simple, but we insist on making it complicated.</a>
+                    <p class="news__text newst__text--hash">#famousquotes</p>
+                    <p class="news__text newst__text--time">8 mins ago</p>
+                </div>
+            </div>
+            <div class="news__item-twitter">
+                <div class="news__icon">
+                    <img src="img/icon-twitter.png" alt="Twitter icon" >
+                </div>
+                <div>
+                    <a href="#" class="news__text newst__text--twitter">Grab the Free Treehouse web template at FreebiesXpress!</a>
+                    <p class="news__text newst__text--hash">#freebies #templates</p>
+                    <p class="news__text newst__text--time">2 days ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">&copy; Copyright 2019 | Coded by <a href="#" class="footer__link">Mateusz Szczepaniak</a></p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon footer__icon--twitter">
+                <img src="img/icon-twitter2.png" alt="Twitter icon">
+            </a>
+            <a href="#" class="footer__icon footer__icon--facebook">
+                <img src="img/icon-facebook.png" alt="Facebook icon">
+            </a>
+            <a href="#" class="footer__icon footer__icon--pinterest">
+                <img src="img/icon-pinterest.png" alt="Pinterest icon">
+            </a>
+            <a href="#" class="footer__icon footer__icon--google">
+                <img src="img/icon-google.png" alt="Google+ icon">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
