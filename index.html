@@ -7,17 +7,13 @@
     <title>WebDev Challenge 3</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto+Slab&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <div class="logo__img"></div>
-            <a class="logo__link logo__title" href="#">Treehouse</a>
-        </div>
+    <header class="header">    
+            <a class="logo__link logo__title" href="#"><div class="logo__img"></div>Treehouse</a>
             <nav class="mobile">
                 <label for="mobile__label">
                     <span class="mobile__icon">&#9776;</span>
@@ -76,14 +72,13 @@
             <img src="img/gear.png" alt="Gear" class="info__gear-img">
         </div>
         <div class="info__wrapper">
-            <h2 class="secondary-title secondary-title--info">Just relax <span class="info__character">&</span></h2>
-            <h2 class="secondary-title secondary-title--info">let us do the heavy lifting</h2>
+            <h2 class="secondary-title secondary-title--info">Just relax <span class="info__character">&</span><br>let us do the heavy lifting</h2>
             <p class="info__text">Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-            <div class="info__item-box">
-                <p class="info__item">Initial Setup & Customizations</p>
-                <p class="info__item">Regular Updates</p>
-                <p class="info__item">Round The Clock Support</p>
-            </div>
+            <ul class="info__item-box">
+                <li class="info__item">Initial Setup & Customizations</li>
+                <li class="info__item">Regular Updates</li>
+                <li class="info__item">Round The Clock Support</li>
+            </ul>
             <button class="btn--info btn">Learn more</button>
         </div>
     </section>
@@ -129,7 +124,7 @@
         <div class="values__box">
             <div class="values__box-item">
                 <div class="values__img">
-                    <img src="img/icon-music.png" alt="Music icon">
+                    <img src="img/icon-music.svg" alt="Music icon">
                 </div>
                 <h3 class="third-title">Work-Life Balance</h3>
                 <p class="values__box-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
@@ -286,5 +281,8 @@
             </a>
         </div>
     </footer>
+    
+    <span class="icon icon-facebook"></span>
+
 </body>
 </html>
