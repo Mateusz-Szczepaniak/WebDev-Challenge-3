@@ -20,11 +20,6 @@ html{
     padding: 0 5%;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-}
-
 .logo__img{
     width: 2.9rem;
     height: 2.9rem;
@@ -33,16 +28,18 @@ html{
     background-image: url(../img/leaf.png);
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0 .5rem 0 0;
 }
 
 .logo__title{
+    display: flex;
+    align-items: center;
     color: #555555;
     font-family: 'Montserrat';
     font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.045rem;
-    padding: 0 0 0 .5rem;
 }
 
 .logo__link{
@@ -524,10 +521,6 @@ html{
     margin: 0 1rem 0 0;
 }
 
-.info__item:hover::before{
-    color: #7cc576;
-    border: 1px solid #7cc576;
-}
 .btn--info{
     display: block;
     margin: 4rem auto 0 auto;
@@ -1423,3 +1416,106 @@ html{
         margin: 0;
     }
 }
+
+/* Icons SVG Sprite*/
+
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../sprite.svg);
+  }
+  .icon-facebook {
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+  }
+  .icon-pinterest {
+    width: 32px;
+    height: 32px;
+    background-position: -48px 0;
+  }
+  .icon-chart {
+    width: 32px;
+    height: 32px;
+    background-position: -96px 0;
+  }
+  .icon-tablet {
+    width: 32px;
+    height: 32px;
+    background-position: -144px 0;
+  }
+  .icon-email {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -48px;
+  }
+  .icon-laptop {
+    width: 32px;
+    height: 32px;
+    background-position: -48px -48px;
+  }
+  .icon-photo {
+    width: 32px;
+    height: 32px;
+    background-position: -96px -48px;
+  }
+  .icon-media {
+    width: 32px;
+    height: 32px;
+    background-position: -144px -48px;
+  }
+  .icon-music {
+    width: 32px;
+    height: 32px;
+    background-position: -192px -48px;
+  }
+  .icon-cart {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -96px;
+  }
+  .icon-news {
+    width: 32px;
+    height: 32px;
+    background-position: -48px -96px;
+  }
+  .icon-locked {
+    width: 32px;
+    height: 32px;
+    background-position: -96px -96px;
+  }
+  .icon-location {
+    width: 18px;
+    height: 32px;
+    background-position: 0 -144px;
+  }
+  .icon-twitter {
+    width: 30px;
+    height: 32px;
+    background-position: -48px -144px;
+  }
+  .icon-star {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -192px;
+  }
+  .icon-graph {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -240px;
+  }
+  .icon-google {
+    width: 32px;
+    height: 32px;
+    background-position: -48px -240px;
+  }
+  .icon-phone {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -288px;
+  }
+  .icon-heart {
+    width: 32px;
+    height: 32px;
+    background-position: 0 -336px;
+  }
