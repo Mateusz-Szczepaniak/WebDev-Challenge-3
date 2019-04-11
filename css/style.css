@@ -20,6 +20,19 @@ html{
     padding: 0 5%;
 }
 
+/* Start Icons SVG Sprite*/
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  /* End Icons SVG Sprite*/
+
 .logo__img{
     width: 2.9rem;
     height: 2.9rem;
@@ -360,9 +373,10 @@ html{
     transform: scale(1.1) 
 }
 
-.service__img{
+.service__icon{
     display: block;
     margin: 0 auto;
+    font-size: 7rem;
 }
 
 .third-title{
@@ -684,6 +698,10 @@ html{
     margin: 1rem 1.5rem 1rem 0;
 }
 
+.project__icon{
+    font-size: 4rem;
+}
+
 .project__link-box{
     display: flex;
     justify-content: center;
@@ -921,6 +939,11 @@ html{
     padding: 1.8rem .2rem 0rem 0;
     margin: 0 auto;
 }
+
+.values__icon {
+    color: #777;
+    font-size: 5rem;
+  }
 
 .values__box-text{
     font-size: 1.3rem;
@@ -1241,9 +1264,14 @@ html{
     margin: 1rem auto; 
 }
 
-.news__icon{
+.news__img{
     margin: 0 1rem 0 0;
     width: 2.8rem;
+}
+
+.news__icon{
+    color: #ececec;
+    font-size: 2.5rem;;
 }
 
 .news__text{
@@ -1371,31 +1399,43 @@ html{
     margin: 0 0 3rem 0;
 }
 
-.footer__icon{
+.footer__img{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background-color: #000;
     margin: 0 1rem;
-    transition: .3s;
+    transition: .3s;}
+
+.footer__icon{
+    font-size: 3rem;
+    color: #fff;
 }
 
-.footer__icon--twitter:hover{
+.footer__icon--twitter{
+    font-size: 2.3rem;
+}
+
+.footer__icon--google{
+    font-size: 2.1rem;
+}
+
+.footer__img--twitter:hover{
     background-color: #00aced;
 }
 
-.footer__icon--facebook:hover{
+.footer__img--facebook:hover{
     background-color: #3b5998;
 }
 
-.footer__icon--pinterest:hover{
+.footer__img--pinterest:hover{
     background-color: #cb2028;
 }
 
-.footer__icon--google:hover{
+.footer__img--google:hover{
     background-color: #da2713;
 }
 
@@ -1417,105 +1457,4 @@ html{
     }
 }
 
-/* Icons SVG Sprite*/
-
-.icon {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-image: url(../sprite.svg);
-  }
-  .icon-facebook {
-    width: 32px;
-    height: 32px;
-    background-position: 0 0;
-  }
-  .icon-pinterest {
-    width: 32px;
-    height: 32px;
-    background-position: -48px 0;
-  }
-  .icon-chart {
-    width: 32px;
-    height: 32px;
-    background-position: -96px 0;
-  }
-  .icon-tablet {
-    width: 32px;
-    height: 32px;
-    background-position: -144px 0;
-  }
-  .icon-email {
-    width: 32px;
-    height: 32px;
-    background-position: 0 -48px;
-  }
-  .icon-laptop {
-    width: 32px;
-    height: 32px;
-    background-position: -48px -48px;
-  }
-  .icon-photo {
-    width: 32px;
-    height: 32px;
-    background-position: -96px -48px;
-  }
-  .icon-media {
-    width: 32px;
-    height: 32px;
-    background-position: -144px -48px;
-  }
-  .icon-music {
-    width: 32px;
-    height: 32px;
-    background-position: -192px -48px;
-  }
-  .icon-cart {
-    width: 32px;
-    height: 32px;
-    background-position: 0 -96px;
-  }
-  .icon-news {
-    width: 32px;
-    height: 32px;
-    background-position: -48px -96px;
-  }
-  .icon-locked {
-    width: 32px;
-    height: 32px;
-    background-position: -96px -96px;
-  }
-  .icon-location {
-    width: 18px;
-    height: 32px;
-    background-position: 0 -144px;
-  }
-  .icon-twitter {
-    width: 30px;
-    height: 32px;
-    background-position: -48px -144px;
-  }
-  .icon-star {
-    width: 32px;
-    height: 32px;
-    background-position: 0 -192px;
-  }
-  .icon-graph {
-    width: 32px;
-    height: 32px;
-    background-position: 0 -240px;
-  }
-  .icon-google {
-    width: 32px;
-    height: 32px;
-    background-position: -48px -240px;
-  }
-  .icon-phone {
-    width: 32px;
-    height: 32px;
-    background-position: 0 -288px;
-  }
-  .icon-heart {
-    width: 32px;
-    height: 32px;
-    background-position: 0 -336px;
-  }
+  
