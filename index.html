@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">    
+    <header class="header" id="header">    
             <a class="logo__link logo__title" href="#"><div class="logo__img"></div>Treehouse</a>
             <nav class="mobile">
                 <label for="mobile__label">
@@ -21,19 +21,19 @@
                 <input type="checkbox" id="mobile__label"/>
                 <ul class="mobile__wrapper">
                     <li class="mobile__item"><a class="mobile__link" href="#">Home</a></li>
-                    <li class="mobile__item"><a class="mobile__link" href="#">About</a></li>
-                    <li class="mobile__item"><a class="mobile__link" href="#">Blog</a></li>
-                    <li class="mobile__item"><a class="mobile__link" href="#">Portfolio</a></li>
-                    <li class="mobile__item"><a class="mobile__link" href="#">Contact</a></li>
+                    <li class="mobile__item"><a class="mobile__link" href="#about">About</a></li>
+                    <li class="mobile__item"><a class="mobile__link" href="#blog">Blog</a></li>
+                    <li class="mobile__item"><a class="mobile__link" href="#portfolio">Portfolio</a></li>
+                    <li class="mobile__item"><a class="mobile__link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         <nav class="nav">
             <ul class="nav__wrapper">
                 <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Portfolio</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                <li class="nav__item"><a class="nav__link" href="#blog">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +42,7 @@
             <p class="about__text">Proin iaculis purus consequat sem cure.</p>
             <button class="btn--about btn">View Portfolio</button>
     </section>
-    <section class="services">
+    <section class="services" id="about">
         <div class="services__wrapper">
             <div class="services__header">
                 <h2 class="secondary-title">Professional Services</h2>
@@ -73,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section class="info">
+    <section class="info" id="blog">
         <div class="info__gear">
             <img src="img/gear.png" alt="Gear" class="info__gear-img">
         </div>
@@ -88,7 +88,7 @@
             <button class="btn--info btn">Learn more</button>
         </div>
     </section>
-    <section class="project">
+    <section class="project" id="portfolio">
         <h2 class="secondary-title">latest project</h2>
         <p class="project__title">Proin iaculis purus consequat sem cure</p>
         <h3 class="third-title third-title--project-top">Developing a framework</h3>
@@ -183,7 +183,7 @@
                 <img src="img/client2.jpg" alt="Client Kim Thompson" class="clients__img">
             </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 class="secondary-title secondary-title--contact">ready to talk about your next project?</h2>
         <button class="contact__btn">Contact us</button>
     </section>
@@ -327,5 +327,10 @@
             </a>
         </div>
     </footer>
+    <a href="#header">
+        <div class="scroll-up">
+            <p>&#10095;</p>
+        </div>
+    </a>
 </body>
 </html>
