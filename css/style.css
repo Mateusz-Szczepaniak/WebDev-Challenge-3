@@ -191,7 +191,6 @@
 html{
     font-family: 'Roboto Slab', sans-serif;
     font-size: 10px;
-    font-display: swap;
     scroll-behavior: smooth;
 }
 
@@ -705,6 +704,8 @@ html{
     background-position: center;
     width: 100%;
     padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .secondary-title--info{
@@ -818,6 +819,7 @@ html{
         width: 75%;
         padding: 7rem 7%;
         z-index: 1;
+        display: block;
     }
     .secondary-title--info{
         text-align: left;
