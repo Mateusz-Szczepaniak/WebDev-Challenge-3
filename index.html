@@ -1,351 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WebDev Challenge 3</title>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto+Slab&amp;subset=latin-ext&font-display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="header" id="header">    
-            <a href="#"><img src="./img/logo.png" alt="Treehouse"></a>
-            <nav class="mobile">
-                <label for="mobile__label">
-                    <span class="mobile__icon">&#9776;</span>
-                </label>
-                <input type="checkbox" id="mobile__label"/>
-                <ul class="mobile__wrapper">
-                    <li class="mobile__item"><a class="mobile__link" href="#">Home</a></li>
-                    <li class="mobile__item"><a class="mobile__link" href="#about">About</a></li>
-                    <li class="mobile__item"><a class="mobile__link" href="#blog">Blog</a></li>
-                    <li class="mobile__item"><a class="mobile__link" href="#portfolio">Portfolio</a></li>
-                    <li class="mobile__item"><a class="mobile__link" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Powisle - Ekskluzywny apartament w centrum Warszawy</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900|Ubuntu:400,500,700&amp;subset=latin-ext" rel="stylesheet" />
+        <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
         <nav class="nav">
-            <ul class="nav__wrapper">
-                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-                <li class="nav__item"><a class="nav__link" href="#blog">Blog</a></li>
-                <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
-                <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+            <div class="nav__box">
+                <div class="nav__logo">
+                    <p class="nav__logo-text">.Powisle</p>
+                    <p class="nav__logo-subtext">Apartament</p>
+                </div>
+            </div>
+            <div class="nav__phone">
+                <a class="nav__phone-link" href="tel:+48602750500">+48 602 750 500</a>
+            </div>
+            <ul class="nav__menu">
+                <li class="nav__item"><a class="nav__link" href="#about">Informacje</a></li>
+                <li class="nav__item"><a class="nav__link" href="#price">Cennik</a></li>
+                <li class="nav__item"><a class="nav__link" href="#gallery">Galeria</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Kontakt</a></li>
+                <li class="nav__item">
+                <a class="nav__link" href="./en"><img class="nav__link--flag" src="./img/united-kingdom-icon.jpg" alt=""/></a>
+                </li>
             </ul>
+            <div class="nav__mobile">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#about"><li>Informacje</li></a>
+                        <a href="#price"><li>Cennik</li></a>
+                        <a href="#gallery"><li>Galeria</li></a>
+                        <a href="#contact"><li>Kontakt</li></a>
+                    </ul>
+                </div>
+            </nav>
+            <a class="nav__link2" href="./en"><img class="nav__link--flag2" src="./img/united-kingdom-icon.jpg" alt=""/></a>
+        </div>
         </nav>
-    </nav>
-    <header class="about">
-            <h1 class="primary-title">Creative Digital Solutions</h1>
-            <p class="about__text">Proin iaculis purus consequat sem cure.</p>
-            <a href="#" class="btn--about btn">View Portfolio</a>
-    </header>
-    <section class="services" id="about">
-        <div class="services__wrapper">
-            <header class="services__header">
-                <h2 class="secondary-title">Professional Services</h2>
-                <p class="services__text">Proin iaculis purus consequat sem cure</p>
-            </header>
-            <div class="services__main">
-                <div class="service">
-                    <svg class="icon service__icon">
-                        <use xlink:href="./img/sprite.svg#icon-heart"></use>
-                    </svg>
-                    <h3 class="third-title">Beautiful designs</h3>
-                    <p class="service__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </div>
-                <div class="service">
-                    <svg class="icon service__icon">
-                        <use xlink:href="./img/sprite.svg#icon-tablet"></use>
-                    </svg>
-                    <h3 class="third-title">Responsive web</h3>
-                    <p class="service__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </div>
-                <div class="service">
-                    <svg class="icon service__icon">
-                        <use xlink:href="./img/sprite.svg#icon-chart"></use>
-                    </svg>
-                    <h3 class="third-title">Marketing tools</h3>
-                    <p class="service__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+        <header class="hero">
+            <div class="hero__social">
+                <p class="hero__social-text">Apartament do wynajęcia</p>
+            </div>
+            <div class="hero__slider">
+                <p class="hero__text">ul. Solec 24, Śródmieście, 00-401 Warszawa</p>
+                <h1 class="hero__heading"><span class="hero__heading--size">Ekskluzywny</span> apartament<br />w centrum Warszawy <br />na sprzedaż i wynajem</h1>
+                <div class="hero__btn">
+                    <a class="hero__btn-link" href="#about">Zobacz więcej &#10141;</a>
+                    <a class="nav__phone-link2" href="tel:+48602750500">+48 602 750 500</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="info" id="blog">
-        <div class="info__gear">
-            <img src="img/gear.png" alt="" class="info__gear-img" aria-hidden="true">
-        </div>
-        <div class="info__wrapper">
-            <h2 class="secondary-title secondary-title--info">Just relax <span class="info__character">&</span><br>let us do the heavy lifting</h2>
-            <p class="info__text">Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-            <ul class="info__item-box">
-                <li class="info__item">Initial Setup & Customizations</li>
-                <li class="info__item">Regular Updates</li>
-                <li class="info__item">Round The Clock Support</li>
-            </ul>
-            <a href="#" class="btn--info btn">Learn more</a>
-        </div>
-    </section>
-    <section class="project" id="portfolio">
-        <h2 class="secondary-title">latest project</h2>
-        <p class="project__title">Proin iaculis purus consequat sem cure</p>
-        <h3 class="third-title third-title--project-top">Developing a framework</h3>
-        <p class="project__text project__text--project-top">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-        <div class="project__box">
-            <div class="project__img">
-                <svg class="icon project__icon">
-                    <use xlink:href="./img/sprite.svg#icon-cart"></use>
-                </svg>
-            </div>          
-            <div>
-                <h4 class="third-title third-title--project">E-Commerce Ready</h4>
-                <p class="project__text">Proin iaculis purus consequat sem cure digni ssim.</p>
-            </div>
-        </div>
-        <div class="project__box">
-            <div class="project__img">
-                <svg class="icon project__icon">
-                    <use xlink:href="./img/sprite.svg#icon-laptop"></use>
-                </svg>
-            </div>          
-            <div>
-                <h4 class="third-title third-title--project">Powerful SEO Features</h4>
-                <p class="project__text">Proin iaculis purus consequat sem cure.</p>
-            </div>
-        </div>
-        <div class="project__box">
-            <div class="project__img">
-                <svg class="icon project__icon">
-                    <use xlink:href="./img/sprite.svg#icon-locked"></use>
-                </svg>
-            </div>          
-            <div>
-                <h4 class="third-title third-title--project">Secure Encryption</h4>
-                <p class="project__text">Proin iaculis purus consequat sem cure iaculis purus.</p>
-            </div>
-        </div>
-        <p class="project__text project__text--project-bottom">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in.</p>
-        <p class="project__link-box"><a class="project__link" href="#">View Details &#10142;</a></p>
-        <img src="img/tablet.png" alt="Tablet" class="project__tablet-img">
-    </section>
-    <section class="values">
-        <h2 class="secondary-title">culture & Values</h2>
-        <p class="values__title">Proin iaculis purus consequat cure.</p>
-        <div class="values__box">
-            <div class="values__box-item">
-                <div class="values__img">
-                    <svg class="icon values__icon">
-                        <use xlink:href="./img/sprite.svg#icon-music"></use>
-                    </svg>
+        </header>
+        <section class="about" id="about">
+            <h2 class="about__title">Informacje o <span class="about__title--size">Apartamencie</span></h2>
+            <div class="about__box">
+                <div class="about__info">
+                    <p class="about__text about__text--size">Ekskluzywny apartament w centrum Warszawy na Powiślu do wynajęcia na dni, doby, tygodnie i miesiące.</p>
+                    <p class="about__text">Nowy, nowoczesny i stylowy apartament w centrum Warszawy z klimatyzowanym salonem dla dużych rodzin lub grup przyjaciół (do 8 osób).</p>
+                    <p class="about__text">Apartament zlokalizowany na Powiślu, zaraz przy Bulwarach Wiślanych oraz przy Trakcie Królewskim, w pobliżu Al. Ujazdowskich, Plac Trzech Krzyży, Nowy Świat oraz blisko na stadion - PGE Stadion Narodowy. Absolutnie wspaniała lokalizacja do odkrywania uroków Warszawy, zarówno w dzień jak i w nocy.</p>
                 </div>
-                <h3 class="third-title">Work-Life Balance</h3>
-                <p class="values__box-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </div>
-            <div class="values__line-first"></div>
-            <div class="values__box-item">
-                <div class="values__img">
-                    <svg class="icon values__icon">
-                        <use xlink:href="./img/sprite.svg#icon-graph"></use>
-                    </svg>
+                <div class="about__items">
+                    <div class="about__item">
+                        <svg class="icon about__icon">
+                            <use xlink:href="./img/sprite.svg#icon-tv"></use>
+                        </svg>
+                        <p class=""><span class="about__number">1</span><br />Salon</p>
+                    </div>
+                    <div class="about__item">
+                        <svg class="icon about__icon">
+                            <use xlink:href="./img/sprite.svg#icon-bed"></use>
+                        </svg>
+                        <p><span class="about__number">3</span><br />Sypialnie</p>
+                    </div>
+                    <div class="about__item">
+                        <svg class="icon about__icon">
+                            <use xlink:href="./img/sprite.svg#icon-bath"></use>
+                        </svg>
+                        <p><span class="about__number">2</span><br />Łazienki</p>
+                    </div>
+                    <div class="about__item">
+                        <svg class="icon about__icon">
+                            <use xlink:href="./img/sprite.svg#icon-window"></use>
+                        </svg>
+                        <p><span class="about__number">2</span><br />Balkony</p>
+                    </div>
+                    <div class="about__item">
+                        <svg class="icon about__icon">
+                            <use xlink:href="./img/sprite.svg#icon-fridge"></use>
+                        </svg>
+                        <p><span class="about__number">1</span><br />Kuchnia</p>
+                    </div>
+                    <div class="about__item">
+                        <svg class="icon about__icon">
+                            <use xlink:href="./img/sprite.svg#icon-house"></use>
+                        </svg>
+                        <p><span class="about__number">110</span> m<sup>2</sup><br />Powierzchni</p>
+                    </div>
                 </div>
-                <h3 class="third-title">Quality Over Quantity</h3>
-                <p class="values__box-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
             </div>
-            <div class="values__line-second"></div>
-            <div class="values__box-item">
-                <div class="values__img">
-                    <svg class="icon values__icon">
-                        <use xlink:href="./img/sprite.svg#icon-star"></use>
+        </section>
+        <section class="description">
+            <div class="description__img">
+                <img class="description__image" src="./img/flower.jpg" alt=" " />
+            </div>
+            <div class="description__box">
+                <h2 class="description__title">Kilka słów o <span class="description__title--size">Apartamencie</span></h2>
+                <p class="description__text">
+                    Ciepłe kolory i nowoczesne wykończenie apartamentu tworzy przyjazny nastrój. <br />
+                    Apartament zlokalizowany jest na 6 piętrze budynku, a duże okna zapewniają widok na panoramę śródmieścia Warszawy, w tym na Pałac Kultury.<br />
+                    Telewizor posiada dostęp do telewizji kablowej z programami telewizyjnymi w języku polskim i angielskim. Łącznie apartament posiada 8 miejsc noclegowych dla dorosłych lub dzieci.
+                    <br /><br />
+                    Apartament składa się z kilku pomieszczeń:
+                </p>
+                <br />
+                <ul class="description__list">
+                    <li class="description__item">Salon: rozkładana kanapa, TV, stół dla 6 osób i klimatyzacja</li>
+                    <li class="description__item">Sypialnia 1: łoże małżeńskie + prywatna łazienka z prysznicem</li>
+                    <li class="description__item">Sypialnia 2: dwa pojedyncze łóżka</li>
+                    <li class="description__item">Sypialnia 3: rozkładana kanapa</li>
+                    <li class="description__item">Łazienka: dodatkowa z wanną</li>
+                    <li class="description__item">Kuchnia: płyta ceramiczna, piekarnik, ekspres do kawy, czajnik, zmywarka oraz komplet naczyń</li>
+                </ul>
+            </div>
+        </section>
+        <section class="rent" id="price">
+            <div class="rent__price">
+                <h2 class="h2-title">Ceny wynajmu</h2>
+                <p class="rent-text rent-text--size">
+                    Sprzedaż apartamentu: 1.8 mln zł <br />
+                    <br />
+                    1-3 noce: 1.000 zł za noc<br />
+                    <br />
+                    4-7 noce: 900 zł za noc<br /><br />
+                </p>
+                <p class="rent-text--size2">
+                    Dłuższe pobyty – prosimy o kontakt<br />
+                    <br />
+                </p>
+                <p class="rent-text">
+                    Jednorazowa opłata za przygotowanie apartamentu – 250 zł
+                </p>
+            </div>
+            <div class="rent__rules">
+                <h2 class="h2-title">Zasady wynajmu</h2>
+                <div class="rent__item">
+                    <svg class="icon rent__icon">
+                        <use xlink:href="./img/sprite.svg#icon-key"></use>
                     </svg>
+                    <p class="rent-text">Zameldowanie: od godziny 15, Wymeldowanie: godzina 10-11</p>
                 </div>
-                <h3 class="third-title">Deliver Excellence</h3>
-                <p class="values__box-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </div>   
-        </div> 
-    </section>
-    <section class="clients">
-        <h2 class="secondary-title">our awesome clients</h2>
-        <p class="clients__title">Proin iaculis purus consequat sem cure.</p>
-        <div class="clients__box">
-            <img src="img/client1.jpg" alt="" class="clients__img">
-            <blockquote class="clients__bubble">
-                <p class="clients__text clients__arrow-one">“Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus.”</p>
-                <citie class="clients__author">- Jamie Richardson, Founder of Cocoa Media</citie>
-            </blockquote>
-        </div>
-        <div class="clients__box clients__box--order">
-                <blockquote class="clients__bubble">
-                    <p class="clients__text clients__arrow-two">“Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus.”</p>
-                    <citie class="clients__author">- Kim Thompson, Founder of Rainel</citie>
-                </blockquote>
-                <img src="img/client2.jpg" alt="" class="clients__img">
+                <div class="rent__item">
+                    <svg class="icon rent__icon">
+                        <use xlink:href="./img/sprite.svg#icon-smoke"></use>
+                    </svg>
+                    <p class="rent-text">Palenie jest zakazane w apartamencie</p>
+                </div>
+                <div class="rent__item">
+                    <svg class="icon rent__icon">
+                        <use xlink:href="./img/sprite.svg#icon-cake"></use>
+                    </svg>
+                    <p class="rent-text">Organizowanie imprez i przyjęć jest zakazane w apartamencie</p>
+                </div>
+                <div class="rent__item">
+                    <svg class="icon rent__icon">
+                        <use xlink:href="./img/sprite.svg#icon-moon"></use>
+                    </svg>
+                    <p class="rent-text">Od godz. 22:00 do godz. 7:00 obowiązuje cisza nocna</p>
+                </div>
+                <div class="rent__item">
+                    <svg class="icon rent__icon">
+                        <use xlink:href="./img/sprite.svg#icon-wifi"></use>
+                    </svg>
+                    <p class="rent-text">Szybki internet WiFi dostępny za dodatkową opłatą</p>
+                </div>
+                <div class="rent__item">
+                    <svg class="icon rent__icon">
+                        <use xlink:href="./img/sprite.svg#icon-car"></use>
+                    </svg>
+                    <p class="rent-text">Parking w garażu podziemnym dostępny za dodatkową opłatą</p>
+                </div>
+                <div class="rent__item">
+                    <svg class="icon rent__icon">
+                        <use xlink:href="./img/sprite.svg#icon-food"></use>
+                    </svg>
+                    <p class="rent-text">Pakiety śniadaniowe dostępne za dodatkową opłatą</p>
+                </div>
             </div>
-    </section>
-    <section class="contact" id="contact">
-        <h2 class="secondary-title secondary-title--contact">ready to talk about your next project?</h2>
-        <a href="#" class="contact__btn">Contact us</a>
-    </section>
-    <section class="trust-us">
-        <h2 class="secondary-title visuallyhidden">Trusted Us</h2>
-        <div class="trust-us__box">
-            <img src="img/envato-logo.png" alt="Envato" class="trust-us__logo">
-            <img src="img/wordpress-logo.png" alt="Wordpress" class="trust-us__logo">
-        </div>
-        <div class="trust-us__box">
-            <img src="img/aetuts-logo.png" alt="Adobe After Effects" class="trust-us__logo">
-            <img src="img/microlancer-logo.png" alt="Microlancer" class="trust-us__logo">
-        </div>    
-    </section>
-    <div class="news">
-        <section class="news__box">
-            <h2 class="third-title third-title--news">Contact Us</h2>
-            <div class="news__item-contact news__item-contact--position">
-                <div class="news__img">
-                    <span class="visuallyhidden">Our location</span>
-                    <svg class="icon news__icon">
+        </section>
+        <section class="gallery" id="gallery">
+            <h2 class="gallery__title">Zobacz nasz <span class="gallery__title--size">Apartament</span></h2>
+            <div
+                ID="gallery"
+                data-nanogallery2='{
+            "itemsBaseURL": "./img/",
+            "thumbnailHeight": "300",
+            "thumbnailBorderVertical": 1,
+            "thumbnailBorderHorizontal": 1,
+            "colorScheme": {
+              "thumbnail": {
+                "borderColor": "rgba(255,255,255,0.6)",
+                "background": "rgba(51,51,51,1)"
+              }
+            },
+            "thumbnailDisplayTransition": "scaleUp",
+            "thumbnailDisplayTransitionDuration": 500,
+            "thumbnailDisplayInterval": 100,
+            "thumbnailLabel": {
+              "display": false
+            },
+            "thumbnailHoverEffect2": "imageScaleIn80",
+            "galleryDisplayMode": "moreButton",
+            "galleryPaginationMode": "dots",
+            "thumbnailAlignment": "center",
+            "thumbnailGutterWidth": 10,
+            "thumbnailGutterHeight": 10,
+            "gallerySorting": "titleasc",
+            "displayBreadcrumb": false,
+            "breadcrumbAutoHideTopLevel": false,
+            "breadcrumbOnlyCurrentLevel": false
+          }'
+            >
+                <a href="/room1.jpg" data-ngthumb="/room1.jpg" data-ngdesc=""></a>
+                <a href="/room2.jpg" data-ngthumb="/room2.jpg" data-ngdesc=""></a>
+                <a href="/room3.jpg" data-ngthumb="/room3.jpg" data-ngdesc=""></a>
+                <a href="/room4.jpg" data-ngthumb="/room4.jpg" data-ngdesc=""></a>
+                <a href="/room5.jpg" data-ngthumb="/room5.jpg" data-ngdesc=""></a>
+                <a href="/room6.jpg" data-ngthumb="/room6.jpg" data-ngdesc=""></a>
+                <a href="/room7.jpg" data-ngthumb="/room7.jpg" data-ngdesc=""></a>
+                <a href="/room8.jpg" data-ngthumb="/room8.jpg" data-ngdesc=""></a>
+                <a href="/room11.jpg" data-ngthumb="/room11.jpg" data-ngdesc=""></a>
+                <a href="/room12.jpg" data-ngthumb="/room12.jpg" data-ngdesc=""></a>
+                <a href="/room13.jpg" data-ngthumb="/room13.jpg" data-ngdesc=""></a>
+                <a href="/room9.jpg" data-ngthumb="/room9.jpg" data-ngdesc=""></a>
+                <a href="/room10.jpg" data-ngthumb="/room10.jpg" data-ngdesc=""></a>
+            </div>
+        </section>
+        <section class="area">
+            <p class="area__left">Apartament znajduje się blisko wszystkich atrakcji Warszawy, na przykład: Warszawska Starówka, Zamek Królewski, Muzeum Warszawy, Giełda Papierów Wartościowych w Warszawie, Muzeum Narodowe, Parlament, Stadion Narodowy, Zespół Pałacowy Łazienki Królewskie, Centrum Nauki Kopernik, Stadion Narodowy i inne.</p>
+            <p class="area__right">Apartament jest świetnie skomunikowany komunikacją miejską z innymi dzielnicami Warszawy. Tramwaj dostępny jest około 300 metrów od budynku. Wokół budynku znajdują się przystanki autobusowe do wszystkich dzielnic miasta. Metro oraz kolejka miejska SKM sa około 10-15 minut na piechotę od budynku.</p>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4887.11651294957!2d21.0372655!3d52.233242999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecda8649d30dd%3A0x5c9f5cd1c7e788ee!2sExclusive+Warsaw+centre+apartment+-+Powisle!5e0!3m2!1spl!2spl!4v1558372868552!5m2!1spl!2spl" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="contact__info">
+                <div class="contact__item">
+                    <svg class="icon contact__icon">
                         <use xlink:href="./img/sprite.svg#icon-location"></use>
                     </svg>
+                    <div>
+                        <p class="contact__text">Adres</p>
+                        <p class="contact__subtext">Powisle Apartament<br />ul. Solec 24<br />00-401 Warszawa</p>
+                    </div>
                 </div>
-                <adress>
-                    <p class="news__text">55 Main St.</p>
-                    <p class="news__text">Toronto, ON</p>
-                    <p class="news__text">M1H 3A5</p>                    
-                </adress>      
-            </div>
-            <div class="news__item-contact">
-                <div class="news__img">
-                    <span class="visuallyhidden">Phone number</span>
-                    <svg class="icon news__icon">
+                <div class="contact__item">
+                    <svg class="icon contact__icon">
                         <use xlink:href="./img/sprite.svg#icon-phone"></use>
                     </svg>
+                    <div>
+                        <p class="contact__text">Telefon / Whatsapp</p>
+                        <a class="contact__subtext" href="tel:+48602750500">+48 602 750 500</a>
+                    </div>
                 </div>
-                <p class="news__text"><a class="news__contact" href="tel:+48555525555">(+48)555-525-555</a></p>      
-            </div>
-            <div class="news__item-contact">
-                <div class="news__img">
-                    <span class="visuallyhidden">Email adress</span>
-                    <svg class="icon news__icon">
-                        <use xlink:href="./img/sprite.svg#icon-email"></use>
+                <div class="contact__item">
+                    <svg class="icon contact__icon">
+                        <use xlink:href="./img/sprite.svg#icon-mail"></use>
                     </svg>
-                </div>
-                <p class="news__text"><a class="news__contact" href="mailto:hello@treehouse.com">hello@treehouse.com</a></p>  
-            </div>
-        </section>
-        <div class="news__line"></div>
-        <section class="news__box">
-                <h2 class="third-title third-title--news">Latest Posts</h2>
-                <div class="news__item-posts">
-                    <div class="news__img">
-                        <svg class="icon news__icon">
-                            <use xlink:href="./img/sprite.svg#icon-news"></use>
-                        </svg>
+                    <div>
+                        <p class="contact__text">Email</p>
+                        <a class="contact__subtext" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%6D%65%7A%63%7A%79%7A%6E%61%40%6F%6E%65%74%2E%70%6C">
+                            <span class="e-mail" data-user="anzyzczem" data-website="lp.teno"></span>
+                        </a>
                     </div>
-                        <a href="#" class="news__text news__text--link">Made With Love In Toronto</a>
-                </div>
-                <div class="news__item-posts">
-                    <div class="news__img">
-                        <svg class="icon news__icon">
-                            <use xlink:href="./img/sprite.svg#icon-photo"></use>
-                        </svg>
-                    </div>
-                    <a href="#" class="news__text news__text--link">Startup News & Emerging Tech</a>      
-                </div>
-                <div class="news__item-posts">
-                    <div class="news__img">
-                        <svg class="icon news__icon">
-                            <use xlink:href="./img/sprite.svg#icon-news"></use>
-                        </svg>
-                    </div>
-                    <a href="#" class="news__text news__text--link">Bitcoin Will Soon Rule The World</a>  
-                </div>
-                <div class="news__item-posts">
-                    <div class="news__img">
-                        <svg class="icon news__icon">
-                            <use xlink:href="./img/sprite.svg#icon-news"></use>
-                        </svg>
-                    </div>
-                    <a href="#" class="news__text news__text--link">Wearable Technology On The Rise</a>  
-                </div>
-                <div class="news__item-posts">
-                    <div class="news__img">
-                        <svg class="icon news__icon">
-                            <use xlink:href="./img/sprite.svg#icon-media"></use>
-                        </svg>
-                    </div>
-                    <a href="#" class="news__text news__text--link">Learn Web Design In 30 Days!</a>  
-                </div>
-        </section>
-        <div class="news__line"></div>
-        <section class="news__box">
-            <h2 class="third-title third-title--news">Latest Tweets</h2>
-            <div class="news__item-twitter">
-                <div class="news__img">
-                    <svg class="icon news__icon">
-                        <use xlink:href="./img/sprite.svg#icon-twitter"></use>
-                    </svg>
-                </div>
-                <div>
-                    <a href="#" class="news__text newst__text--twitter">Confucius: Life is really simple, but we insist on making it complicated.</a>
-                    <p class="news__text newst__text--hash">#famousquotes</p>
-                    <p class="news__text newst__text--time">8 mins ago</p>
-                </div>
-            </div>
-            <div class="news__item-twitter">
-                <div class="news__img">
-                    <svg class="icon news__icon">
-                        <use xlink:href="./img/sprite.svg#icon-twitter"></use>
-                    </svg>
-                </div>
-                <div>
-                    <a href="#" class="news__text newst__text--twitter">Grab the Free Treehouse web template at FreebiesXpress!</a>
-                    <p class="news__text newst__text--hash">#freebies #templates</p>
-                    <p class="news__text newst__text--time">2 days ago</p>
                 </div>
             </div>
         </section>
-    </div>
-    <footer class="footer">
-        <p class="footer__text">&copy; Copyright 2019 | Coded by <a href="https://github.com/Mateusz-Szczepaniak" class="footer__link">Mateusz Szczepaniak</a></p>
-        <ul class="footer__social">
-            <li>
-            <a href="#" class="footer__img footer__img--twitter">
-                <span class="visuallyhidden">Twitter</span>
-                <svg class="icon footer__icon footer__icon--twitter">
-                    <use xlink:href="./img/sprite.svg#icon-twitter"></use>
-                </svg>
-            </a>
-            </li>
-            <li>
-            <a href="#" class="footer__img footer__img--facebook">
-                <span class="visuallyhidden">Facebook</span>
-                <svg class="icon footer__icon">
-                    <use xlink:href="./img/sprite.svg#icon-facebook"></use>
-                </svg>
-            </a>
-            </li>
-            <li>
-            <a href="#" class="footer__img footer__img--pinterest">
-                <span class="visuallyhidden">Pinterest</span>
-                <svg class="icon footer__icon">
-                    <use xlink:href="./img/sprite.svg#icon-pinterest"></use>
-                </svg>
-            </a>
-            </li>
-            <li>
-            <a href="#" class="footer__img footer__img--google">
-                <span class="visuallyhidden">Google+</span>
-                <svg class="icon footer__icon footer__icon--google">
-                    <use xlink:href="./img/sprite.svg#icon-google"></use>
-                </svg>
-            </a>
-            </li>
-        </div>
-    </footer>
-    <a href="#header">
-        <div class="scroll-up">
-            <span class="visuallyhidden">Scroll up</span>
-            <p class="scroll-up__item" aria-hidden="true">&#10095;</p>
-        </div>
-    </a>
-</body>
+        <footer class="footer">
+            <p class="footer__text">Copyright &copy; 2019 Powisle Apartament. Wszelkie prawa zastrzeżone. | Zaprojektowane przez <a class="footer__link" href="#">Mateusz Szczepaniak</a></p>
+        </footer>
+
+        <!-- <script type='text/javascript'>
+var language = window.navigator.language;
+if(language == 'pl-PL')
+{
+window.location.href = '../#'
+}
+
+else {
+window.location.href = '../en/'
+}
+
+</script> -->
+
+        <!-- <script type='text/javascript'>
+    window.onload = function() {
+
+var ln = window.navigator.language||navigator.browserLanguage;
+
+if(ln == 'pl'){
+
+  window.location.href = '#';
+
+}else{
+
+  window.location.href = '/en'; 
+
+}
+
+}
+    </script> -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+    </body>
 </html>
